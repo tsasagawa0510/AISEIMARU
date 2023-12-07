@@ -7,18 +7,62 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
   <!-- my.css -->
   <link rel="stylesheet" href="style.css">
+  <!-- slickの読み込み -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <title>AISEIMARU</title>
 </head>
 <body>
   <header>
-
   </header>
   <main>
+
+
+    <div class="ly_inner mainView_inner_bkgColor"><!-- mainvisual inner-->
+
+      <!-- columrapprer -->
+      <div class="mainViewUnit">
+        <!-- 2カラム←  -->
+        <div class="mainColum colLeft">
+          <h1><a class="logo" href=""><img class="logo_img" src="image/AISEIMARU-logo.png" alt="logo"></a></h1>
+          <img src="image/catchcopy01.png" alt="">
+          <p class="parag mainParag">AISEIMARUは、<br>
+            福島県いわき市四倉の釣船。<br>
+            ビギナーさんからベテランさんまで、
+            安全に楽しい釣りをお手伝い！
+          </p>
+        </div>
+
+        <!--カルーセル 2カラム→-->
+        <div class="mainColum colRight">
+          <div class="mainView_slide js_slide">
+            <ul class="js_slide_list">
+              <li>
+                <picture>
+                  <source srcset="image/AdobeStock_276351590.jpeg" media="(min-width: 1000px)" /><!-- 幅1000px以上なら表示 -->
+                  <source srcset="image/AdobeStock_276351590.jpeg" media="(min-width: 700px)" width="950px"/><!-- 幅700px以上なら表示 -->
+                  <source srcset="image/AdobeStock_276351590.jpeg" media="(min-width: 500px)" width="950px"/><!-- 幅500px以上なら表示 -->
+                  <img src="image/AdobeStock_276351590.jpeg" alt=""/><!-- それ以外で表示 -->
+                <picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    
 
   </main>
   <footer>
     
   </footer>
+   <!-- JQUERYの読み込み -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+   <!-- slickの読み込み -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

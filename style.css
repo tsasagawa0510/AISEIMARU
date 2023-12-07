@@ -6,6 +6,8 @@ body {
   font-size: 16px;
   font-size: 1.6rem; /* 16px */
   text-align: center;
+  background-color: #424242;
+  color: #fff;
 }
 
 a {
@@ -21,4 +23,57 @@ a:active{
 
 li {
   list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+.ly_inner{
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+max-width: 1360px;
+border-radius: 50px;
+
+}
+
+.mainView_inner_bkgColor{
+  background-color: #428a92;
+}
+
+.mainViewUnit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block; 
+}
+
+.logo .logo_img {
+  vertical-align: bottom;
+  width: 600px;
+}
+
+.mainParag {
+  font-size: 2.5em;
+  text-align: left;
+}
+
+.mainView_slide {
+  
+}
+
+.colRight {
+ align-self: center;
+ /* flex-shrink: 0; */
+ border-radius: 50px;
+ background-color: beige;
+}
+
+.colRight img {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  overflow: hidden;
 }
