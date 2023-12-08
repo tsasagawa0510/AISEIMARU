@@ -32,10 +32,12 @@ img{
 .ly_inner{
 margin-left: auto;
 margin-right: auto;
-margin-top: 50px;
-max-width: 1360px;
+margin-top: 10px;
+/* margin-bottom: auto; */
+/* max-width: 1360px; */
+max-width: 1200px;
 border-radius: 50px;
-
+box-sizing:border-box;
 }
 
 .mainView_inner_bkgColor{
@@ -45,6 +47,13 @@ border-radius: 50px;
 .mainViewUnit {
   display: flex;
   justify-content: space-between;
+  margin-right: 20px;
+  height: 95vh;
+}
+
+.colLeft {
+  text-align: left;
+  margin-left: 10px;
 }
 
 .logo {
@@ -53,12 +62,16 @@ border-radius: 50px;
 
 .logo .logo_img {
   vertical-align: bottom;
-  width: 600px;
+  width: 200px;
 }
 
 .mainParag {
-  font-size: 2.5em;
-  text-align: left;
+  font-size: 1.1em;
+}
+
+.mainCol_catch {
+  /* width: 200px; */
+  /* margin-left: 200px; */
 }
 
 .mainView_slide {
@@ -68,12 +81,19 @@ border-radius: 50px;
 .colRight {
  align-self: center;
  /* flex-shrink: 0; */
- border-radius: 50px;
+ border-radius: 20px;
  background-color: beige;
+ max-width: 800px;
+ margin-top: 20px;
+ margin-bottom: 20px;
 }
 
 .colRight img {
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.mainColum {
+  padding: 5px;
   overflow: hidden;
 }
