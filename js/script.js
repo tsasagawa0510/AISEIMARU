@@ -1,4 +1,4 @@
-$('.js_slide_list').slick({
+$('.js_slide').slick({
   autoplay: true,
   dots: true,
   infinite: true,

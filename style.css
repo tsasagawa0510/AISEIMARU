@@ -6,8 +6,9 @@ body {
   font-size: 16px;
   font-size: 1.6rem; /* 16px */
   text-align: center;
-  background-color: #424242;
+  background-color: #cdebe7;
   color: #fff;
+  box-sizing:border-box;
 }
 
 a {
@@ -27,73 +28,78 @@ li {
 
 img{
   width: 100%;
+  max-width: 100%;
 }
 
 .ly_inner{
-margin-left: auto;
-margin-right: auto;
-margin-top: 10px;
-/* margin-bottom: auto; */
-/* max-width: 1360px; */
-max-width: 1200px;
-border-radius: 50px;
-box-sizing:border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-width: 700px;
+  /* max-width: calc(100vh - 40px); */
+  max-width: 1440px;
+  border-radius: 40px;
+  height: calc(100vh - 40px);
+  position: relative;
 }
 
 .mainView_inner_bkgColor{
-  background-color: #428a92;
+  background-color: rgb(11, 43, 39);
+  /* background-color: #428a92; */
 }
 
 .mainViewUnit {
   display: flex;
   justify-content: space-between;
-  margin-right: 20px;
-  height: 95vh;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 .colLeft {
   text-align: left;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 40%;
+  padding: 60px 0 60px 60px;
 }
 
+.mainCol_catch {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  z-index: 2;
+  transform: translateY(-50%);
+  opacity: 0.7;
+}
+
+.mainCol_catch img {
+  width: 35%;
+}
+
+.colRight {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  flex-basis: 60%;
+}
+ 
+ .colRight img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+ 
 .logo {
   display: block; 
 }
 
 .logo .logo_img {
   vertical-align: bottom;
-  width: 200px;
+  max-width: 50%;
 }
 
 .mainParag {
-  font-size: 1.1em;
-}
-
-.mainCol_catch {
-  /* width: 200px; */
-  /* margin-left: 200px; */
-}
-
-.mainView_slide {
-  
-}
-
-.colRight {
- align-self: center;
- /* flex-shrink: 0; */
- border-radius: 20px;
- background-color: beige;
- max-width: 800px;
- margin-top: 20px;
- margin-bottom: 20px;
-}
-
-.colRight img {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-
-.mainColum {
-  padding: 5px;
-  overflow: hidden;
+  font-size: 1.2em;
+  font-weight: 900;
 }
