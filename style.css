@@ -3,12 +3,14 @@ html{
 }
  
 body {
-  font-size: 16px;
   font-size: 1.6rem; /* 16px */
   text-align: center;
   background-color: #cdebe7;
   color: #fff;
   box-sizing:border-box;
+  font-family: "zen-maru-gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 a {
@@ -31,30 +33,42 @@ img{
   max-width: 100%;
 }
 
+/* ------------------------共通クラス-------------------------- */
+
 .ly_inner{
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   min-width: 700px;
-  /* max-width: calc(100vh - 40px); */
-  max-width: 1440px;
+  max-width: calc(100vw - 40px);
+  /* max-width: 1440px; */
   border-radius: 40px;
   height: calc(100vh - 40px);
-  position: relative;
+  
 }
 
-.mainView_inner_bkgColor{
+.ly_inner.mainView_inner_bkgColor {
   background-color: rgb(11, 43, 39);
-  /* background-color: #428a92; */
 }
 
-.mainViewUnit {
+.ly_inner.aboutView_bkgColor{
+  background-color: #e04656
+}
+
+.ly_inner.newsView_bkgColor{
+  background-color: #e07f00;
+}
+/* ------------------------共通クラス終わり----------------------- */
+
+/* ------------------------------msinCarchUnit---------------------------- */
+.mainCatchUnit {
   display: flex;
   justify-content: space-between;
   height: 100%;
   width: 100%;
   max-width: 100%;
+  position: relative;
 }
 
 .colLeft {
@@ -75,31 +89,35 @@ img{
   opacity: 0.7;
 }
 
-.mainCol_catch img {
+.mainCatch_img{
   width: 35%;
 }
 
 .colRight {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
   flex-basis: 60%;
 }
  
- .colRight img {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
- 
-.logo {
-  display: block; 
+.colRight img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
-
-.logo .logo_img {
+ 
+.logo_img {
   vertical-align: bottom;
   max-width: 50%;
 }
 
-.mainParag {
-  font-size: 1.2em;
+.mainCatch_p {
+  font-size: 1.6em;
   font-weight: 900;
 }
+
+/* ------------------------------msinCarchUnit終わり---------------------------- */
+
+/* ------------------------------aboutUnit---------------------------- */
+
+/* ------------------------------aboutUnit終わり---------------------------- */
+
+/* ------------------------------newsUnit---------------------------- */
+
+/* ------------------------------newsUnit終わり---------------------------- */

@@ -13,23 +13,33 @@
   <title>AISEIMARU</title>
 </head>
 <body>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'cjk8uut',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
   <header>
   </header>
   <main>
 
-    <div class="ly_inner mainView_inner_bkgColor"><!-- mainvisual inner-->
+    <section class="ly_inner mainView_inner_bkgColor"><!-- mainvisual inner-->
 
       <!-- columrapprer -->
-      <div class="mainViewUnit">
+      <div class="mainCatchUnit">
         <!-- 2カラム←  -->
         <div class="mainColum colLeft">
           <h1><a class="logo" href=""><img class="logo_img" src="image/AISEIMARU-logo.png" alt="logo"></a></h1>
-          <div class="mainCol_catch" >
+          <div class="mainCatch_img" >
             <picture srcset="image/AISEIMARU-logo.png" media="(min-width: 1000px)"></picture>
             <img src="image/catchcopy01.png" alt="">
           </div>
           
-          <p class="parag mainParag">AISEIMARUは、<br>
+          <p class="mainCatch_p">AISEIMARUは、<br>
             福島県いわき市四倉の釣船。<br><br>
             ビギナーからベテランまで、<br>
             安全に楽しい釣りをお手伝い！
@@ -46,13 +56,71 @@
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
+    <section class="ly_inner aboutView_bkgColor">
 
-    
-    
-    
+      
+      <div>
+        <h2>愛成丸
+          <span>福島県いわき市　四倉港</span>
+        </h2>
+  
+        <p>
+          愛成丸では、小型船からフル装備大型船が4隻体制で操業しております。<br>
+          お客様のニーズに合わせ、快適に釣りが楽しめるよう務めております。<br>
+        </p>
+  
+        <img src="" alt="船">
+      </div>
+     
 
+      <div>
+        <table>
+          <tr>
+            <th>スペック</th>
+            <td>ddddddd</td>
+          </tr>
+          <tr>
+            <th>最大乗船人数</th>
+            <td>ddddddd</td>
+          </tr>
+          <tr>
+            <th>装備</th>
+            <td>ddddddd</td>
+          </tr>
+          <tr>
+            <th>駐車場</th>
+            <td>ddddddd</td>
+          </tr>
+          <tr>
+            <th>ご利用可能決済方法</th>
+            <td>ddddddd</td>
+          </tr>
+        </table>
+
+        <div>
+          <div>
+            <img src="" alt="船長：笹川">
+            <span>代表</span>
+            <span>笹川　翼</span>
+            <span>（ささがわ　つばさ）</span>
+          </div>
+          
+          <p>
+            こんにちは、皆さん！私は[船長の名前]と申します。今日は私たちの釣り冒険に参加してくれて、本当にありがとうございます。<br>
+
+            私は長年、この海での釣りに情熱を傾けてきました。この船は私にとっても特別な存在であり、私のクルーとともに、最高の釣り体験を提供することに誇りを持っています。<br>
+            
+            私の釣りの経験は、これまでに様々な種類の魚を追い求める中で培われました。私たちは安全に、そして最高の状態でこの船を維持し、皆さんに楽しんでいただけるように心がけています。<br>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ly_inner newsView_bkgColor">
+      news
+    </section>
   </main>
   <footer>
     
