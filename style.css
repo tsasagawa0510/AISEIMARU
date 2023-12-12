@@ -138,6 +138,18 @@ img{
   font-weight: 900;
 }
 
+.mainCatch_p::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  top: -1px;
+  /* padding-left: 50px; */
+  border-left: 5px solid;
+  opacity: 0.4;
+}
+
 /* ------------------------------msinCarchUnit終わり---------------------------- */
 
 /* ------------------------------aboutUnit---------------------------- */
