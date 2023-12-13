@@ -231,31 +231,60 @@ img{
 
 /* ------------------------------newsUnit---------------------------- */
 
+.ly_inner.newsView_bkgColor {
+  padding: 20px;
+  height: 100%;
+}
+
 .post {
-  
+  border: 3px solid rgb(247, 203, 81);
+  box-shadow: 2px 4px 2px rgba(182, 150, 62, 0.418);
+  width: 50%;
+  position: relative;
+  text-align: left;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.103);
 }
 .postDay {
+  
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%) translateX(1em);
+  background-color: #e07f00;
+}
 
+.postDay::before {
+  content: "-";
+  padding-left: 10px;
+}
+
+.postWrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .postBody {
-
+  width: 70%;
 }
 
 .postHeader {
-
+  font-size: 1.4em;
 }
 
 .postText {
-
+  
 }
 
 .postImg {
-
+  width: 30%;
 }
 
 .postImg img {
-  
+  object-fit: cover;
+  height: 100%;
 }
 
 /* ------------------------------newsUnit終わり---------------------------- */
