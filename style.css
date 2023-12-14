@@ -304,3 +304,54 @@ img{
 }
 
 /* ------------------------------newsUnit終わり---------------------------- */
+/* ------------------------------footer---------------------------- */
+footer {
+  background-color: #e04656;
+  
+}
+
+.footerSub {
+  width: 100%;
+  background-color: #7cffff;
+  position: relative;
+}
+.footerSub::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100px;
+  background: url(image/nami.png) repeat-x;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 0;
+  background-size: contain;
+
+  animation: footer-anime 6s .3s infinite;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: footer-anime;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+}
+
+@keyframes footer-anime {
+  0% {
+    transform: scaleX(100%);
+  }
+
+  35% {
+    transform: scaleX(120%);
+  }
+
+  50% {
+    transform: scaleX(120%);
+  }
+}
+/* ------------------------------footer終わり---------------------------- */
