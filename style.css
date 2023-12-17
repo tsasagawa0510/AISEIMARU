@@ -120,7 +120,8 @@ img{
 }
 
 .colRight {
-  flex-basis: 60%;
+  align-self: center;
+  width: 60%;
 }
  
 .colRight img {
@@ -148,6 +149,31 @@ img{
   /* padding-left: 50px; */
   border-left: 5px solid;
   opacity: 0.4;
+}
+
+.mainCatchUnit::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(11, 43, 39);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: width .8s 2.4s ease-in-out;
+}
+
+.mainCatchUnit[data-view=true]::before {
+  width: 0;
+  left: initial;
+}
+
+.mainView_slide {
+  position: relative;
+}
+
+.slick-dots {
+  bottom: 0px !important;
 }
 
 /* ------------------------------msinCarchUnit終わり---------------------------- */
@@ -306,8 +332,9 @@ img{
 /* ------------------------------newsUnit終わり---------------------------- */
 /* ------------------------------footer---------------------------- */
 footer {
-  background-color: #e04656;
-  
+  background-color: #f6f3f3;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .footerSub {
@@ -328,17 +355,17 @@ footer {
   background-size: contain;
 
   animation: footer-anime 6s .3s infinite;
-    animation-duration: 6s;
-    animation-timing-function: ease;
-    animation-delay: 0.3s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: footer-anime;
-    animation-timeline: auto;
-    animation-range-start: normal;
-    animation-range-end: normal;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: footer-anime;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
 }
 
 @keyframes footer-anime {
@@ -353,6 +380,7 @@ footer {
   50% {
     transform: scaleX(120%);
   }
+
 }
 /* ------------------------------footer終わり---------------------------- */
 /* ------------------------------script---------------------------- */

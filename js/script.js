@@ -4,6 +4,7 @@ $('.js_slide').slick({
   infinite: true,
   autoplaySpeed: 5000,
   arrows: false,
+  // dotsClass: "slide-dots-orijin",
 });
 
 $(window).scroll(function () {
