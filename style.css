@@ -151,7 +151,12 @@ img{
   opacity: 0.4;
 }
 
-.mainCatchUnit::before{
+.mainView_slide[data-view="true"]::before {
+  width: 0;
+  /* left: initial; */
+}
+
+.mainView_slide::before{
   content: "";
   width: 100%;
   height: 100%;
@@ -160,12 +165,8 @@ img{
   top: 0;
   left: 0;
   z-index: 3;
-  transition: width .8s 2.4s ease-in-out;
-}
-
-.mainCatchUnit[data-view=true]::before {
-  width: 0;
-  left: initial;
+  /* inset: 0; */
+  transition: width .8s 1.4s ease-in-out;
 }
 
 .mainView_slide {
