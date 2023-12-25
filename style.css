@@ -5,7 +5,7 @@ html{
 body {
   font-size: 1.6rem; /* 16px */
   text-align: center;
-  /* background-color: #cdebe7; */
+  background-color: #84a97f;
   color: #fff;
   box-sizing:border-box;
   font-family: "zen-maru-gothic", sans-serif;
@@ -107,16 +107,28 @@ img{
 }
 
 .mainCol_catch {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 150px;
   z-index: 2;
   transform: translateY(-50%);
-  opacity: 0.7;
+  opacity: 0.7; */
+}
+
+.mainCatch_img[data-view="true"] {
+  opacity: 0.2;
+  transform: translateY(-50%);
 }
 
 .mainCatch_img{
-  width: 50%;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  opacity: 0;  
+  transition:
+  transform .8s .5s cubic-bezier(0.61, 1.98, 0.51, 0.56),opacity .6s .5s,-webkit-transform .6s .5s cubic-bezier(0.61, 1.98, 0.51, 0.56);
+  z-index: 5;
 }
 
 .colRight {
@@ -135,20 +147,9 @@ img{
 }
 
 .mainCatch_p {
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 900;
-}
-
-.mainCatch_p::before {
-  content: "";
-  display: inline-block;
-  width: 100px;
-  height: 100%;
-  position: absolute;
-  top: -1px;
-  /* padding-left: 50px; */
-  border-left: 5px solid;
-  opacity: 0.4;
+  padding-left: 20px;
 }
 
 .mainView_slide[data-view="true"]::before {
@@ -167,6 +168,30 @@ img{
   z-index: 3;
   /* inset: 0; */
   transition: width .8s 1.4s ease-in-out;
+}
+
+.mainCatch_p[data-view="true"]::before {
+  /* width: 0; */
+  opacity: .5;
+  width: 2px;
+  background-color: rgba(25, 240, 215, 0.525);
+}
+
+.mainCatch{
+  position: relative;
+}
+
+.mainCatch_p::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(11, 43, 39);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3; 
+  inset: 0;
+  transition: all .8s 1.4s ease-in-out;
 }
 
 .mainView_slide {
@@ -382,6 +407,59 @@ footer {
     transform: scaleX(120%);
   }
 
+}
+.footerFront {
+  color: black;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footerFront_policy {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgba(255, 255, 255, 0.753); */
+}
+
+.policy {
+  width: 20%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.policy span {
+  align-self: flex-end;
+  font-size: 1.6rem;
+}
+
+.policy span::after {
+  content: '';
+  display: block;
+  border-bottom: solid 1px black;
+}
+
+.safity {
+  background-image: url("image/ferry.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.beginner {
+  background-image: url("image/beginner.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.creen {
+  background-image: url("image/creen.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sample {
+  background-image: url("image/fish.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 /* ------------------------------footer終わり---------------------------- */
 /* ------------------------------script---------------------------- */

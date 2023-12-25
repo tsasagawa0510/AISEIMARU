@@ -18,3 +18,10 @@ $(window).scroll(function () {
     }
   });
 });
+
+$(window).on("load", function() {
+  $(".mainView_slide").attr("data-view", "true");
+  $(".mainCatch_img").attr("data-view", "true");
+  $(".mainCatch_p").attr("data-view", "true");
+  // console.log($(".mainView_slide").data("view"));
+});

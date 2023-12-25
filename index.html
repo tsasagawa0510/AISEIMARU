@@ -34,21 +34,24 @@
         <!-- 2カラム←  -->
         <div class="mainColum colLeft">
           <h1><a class="logo" href=""><img class="logo_img" src="image/AISEIMARU-logo.png" alt="logo"></a></h1>
-          <div class="mainCatch_img" >
+          <div class="mainCatch_img" data-view="false" >
             <picture srcset="image/AISEIMARU-logo.png" media="(min-width: 1000px)"></picture>
             <img src="image/catchcopy01.png" alt="">
           </div>
           
-          <p class="mainCatch_p">AISEIMARUは、<br>
-            福島県いわき市四倉の釣船。<br><br>
-            ビギナーからベテランまで、<br>
-            安全に楽しい釣りをお手伝い！
-          </p>
+          <div class="mainCatch">
+            <p class="mainCatch_p" data-view="false">AISEIMARUは、<br>
+              福島県いわき市四倉の釣船。<br><br>
+              ビギナーからベテランまで、<br>
+              安全に楽しい釣りをお手伝い！
+            </p>
+          </div>
+          
         </div>
 
         <!--カルーセル 2カラム→-->
         <div class="mainColum colRight ">
-          <div class="mainView_slide" data-view="true">
+          <div class="mainView_slide" data-view="false">
             <div class="js_slide">
               <div class="">
                 <img src="image/AdobeStock_276351590.jpeg" alt=""/><!-- それ以外で表示 -->
@@ -217,7 +220,17 @@
 
     </section>
   </main>
-  <footer>
+  <footer class="js-fadeIn">
+
+    <div class="footerFront">
+      <ul class="footerFront_policy">
+        <li class="policy safity"><span>安全への取組み</span></li>
+        <li class="policy beginner"><span>初心者でも楽しめる</span></li>
+        <li class="policy creen"><span>環境への配慮</span></li>
+        <li class="policy sample"><span>SAMPLE TEXT</span></li>
+      </ul>
+    </div>
+
     <div class="footerMain">
       <a class="logo" href=""><img class="logo_img" src="image/AISEIMARU-logo.png" alt="logo"></a>
     </div>
