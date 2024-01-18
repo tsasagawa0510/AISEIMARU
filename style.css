@@ -354,7 +354,12 @@ img{
 
 .aboutTxt {
   text-align: left;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  line-height: 4rem;
 }
+
+
 
 .aboutImg {
   width: 60%;
@@ -542,8 +547,8 @@ img{
 .modal-inner {
   z-index: 10;
   position: fixed;
-  width: 800px;
-  height: 300px;
+  width: 70vw;
+  height: 65vh;
   padding: 20px;
   background-color: #ffffff;
   background-position: center center;
@@ -558,12 +563,28 @@ img{
   visibility: hidden;
 }
 
+.modal-inner::after {
+  content: "";
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
 .modal-inner.active {
   opacity: 1;
   visibility: visible;
 }
 
 p[data-model] {
+  display: none;
+}
+
+div[data-model] {
   display: none;
 }
 
@@ -574,6 +595,13 @@ p[data-model] {
   width: 30px;
   height: 30px;
   text-align: center;
+}
+
+.modal-text {
+  text-align: left;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  line-height: 4rem;
 }
 
 /* ---------------------------Policy終わり----------------------------------- */
@@ -767,6 +795,27 @@ footer {
 
 
 /* ------------------------------footer終わり---------------------------- */
+
+@media screen and (max-width: 767px){
+
+  .mainCatchUnit {
+    display: block;
+  }
+
+  .mainColum {
+    width: 100%;
+  }
+  
+  .ly_inner.mainView_inner_bkgColor {
+    height: 200vh;
+  }
+}
+
+
+
+
+
+
 /* ------------------------------script---------------------------- */
 .js-fadeIn {
   opacity: 0;

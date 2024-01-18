@@ -41,8 +41,8 @@ modalBtn.forEach(function(btn) {
     modal.classList.add('active');
     let inner = btn.getAttribute('data-model');
     console.log(inner);
-    let target = document.querySelector(`p[data-model=${inner}]`);
-    content.textContent = target.textContent;
+    let target = document.querySelector(`div[data-model=${inner}]`);
+    content.innerHTML = target.innerHTML;
   });
 });
 
